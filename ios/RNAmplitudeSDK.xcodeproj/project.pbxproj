@@ -8,7 +8,60 @@
 
 /* Begin PBXBuildFile section */
 		13BE3DEE1AC21097009241FE /* AmplitudeSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 13BE3DED1AC21097009241FE /* AmplitudeSDK.m */; };
+		C08B738523EC83DD004C209C /* libAmplitude.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C08B737723EC81D9004C209C /* libAmplitude.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C08B737623EC81D9004C209C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E98C05231A48E7FE00800C63;
+			remoteInfo = Amplitude;
+		};
+		C08B737823EC81D9004C209C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E98C052E1A48E7FE00800C63;
+			remoteInfo = AmplitudeTests;
+		};
+		C08B737A23EC81D9004C209C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 343AB4171CC99F4F00962943;
+			remoteInfo = AmplitudeFramework;
+		};
+		C08B737C23EC81D9004C209C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 37802BF31E86AF65003E5A8B;
+			remoteInfo = AmplitudeFrameworkTVOS;
+		};
+		C08B737E23EC81D9004C209C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 600CBC5C1E2EF5B0001F58A9;
+			remoteInfo = AmplitudeTVOSTests;
+		};
+		C08B738023EC81E2004C209C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E98C05221A48E7FE00800C63;
+			remoteInfo = Amplitude;
+		};
+		C08B738223EC81E7004C209C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 343AB4161CC99F4F00962943;
+			remoteInfo = AmplitudeFramework;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		58B511D91A9E6C8500147676 /* CopyFiles */ = {
@@ -26,6 +79,7 @@
 		134814201AA4EA6300B7C361 /* libRNAmplitudeSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNAmplitudeSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		13BE3DEC1AC21097009241FE /* AmplitudeSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AmplitudeSDK.h; sourceTree = "<group>"; };
 		13BE3DED1AC21097009241FE /* AmplitudeSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AmplitudeSDK.m; sourceTree = "<group>"; };
+		C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Amplitude.xcodeproj; path = "../Amplitude-iOS/Amplitude.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C08B738523EC83DD004C209C /* libAmplitude.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,11 +105,32 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
+				C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */,
 				13BE3DEC1AC21097009241FE /* AmplitudeSDK.h */,
 				13BE3DED1AC21097009241FE /* AmplitudeSDK.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
+				C08B738423EC83DD004C209C /* Frameworks */,
 			);
 			indentWidth = 5;
+			sourceTree = "<group>";
+		};
+		C08B736F23EC81D9004C209C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C08B737723EC81D9004C209C /* libAmplitude.a */,
+				C08B737923EC81D9004C209C /* AmplitudeTests.xctest */,
+				C08B737B23EC81D9004C209C /* Amplitude.framework */,
+				C08B737D23EC81D9004C209C /* Amplitude.framework */,
+				C08B737F23EC81D9004C209C /* AmplitudeTVOSTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C08B738423EC83DD004C209C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +147,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				C08B738323EC81E7004C209C /* PBXTargetDependency */,
+				C08B738123EC81E2004C209C /* PBXTargetDependency */,
 			);
 			name = RNAmplitudeSDK;
 			productName = RCTDataManager;
@@ -96,17 +174,62 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 58B511D21A9E6C8500147676;
 			productRefGroup = 58B511D21A9E6C8500147676;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C08B736F23EC81D9004C209C /* Products */;
+					ProjectRef = C08B736E23EC81D9004C209C /* Amplitude.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				58B511DA1A9E6C8500147676 /* RNAmplitudeSDK */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C08B737723EC81D9004C209C /* libAmplitude.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libAmplitude.a;
+			remoteRef = C08B737623EC81D9004C209C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C08B737923EC81D9004C209C /* AmplitudeTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AmplitudeTests.xctest;
+			remoteRef = C08B737823EC81D9004C209C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C08B737B23EC81D9004C209C /* Amplitude.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Amplitude.framework;
+			remoteRef = C08B737A23EC81D9004C209C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C08B737D23EC81D9004C209C /* Amplitude.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Amplitude.framework;
+			remoteRef = C08B737C23EC81D9004C209C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		C08B737F23EC81D9004C209C /* AmplitudeTVOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AmplitudeTVOSTests.xctest;
+			remoteRef = C08B737E23EC81D9004C209C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58B511D71A9E6C8500147676 /* Sources */ = {
@@ -118,6 +241,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C08B738123EC81E2004C209C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Amplitude;
+			targetProxy = C08B738023EC81E2004C209C /* PBXContainerItemProxy */;
+		};
+		C08B738323EC81E7004C209C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AmplitudeFramework;
+			targetProxy = C08B738223EC81E7004C209C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		58B511ED1A9E6C8500147676 /* Debug */ = {
@@ -156,6 +292,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -189,6 +326,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-lsqlite3.0";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
